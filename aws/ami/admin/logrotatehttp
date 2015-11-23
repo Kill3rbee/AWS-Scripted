@@ -1,0 +1,11 @@
+/var/log/webhttpd.log /var/log/webhttpderr.log {
+    daily
+    rotate 90
+    olddir /var/log/old
+    missingok
+    sharedscripts
+    postrotate
+        service rsyslog restart
+    endscript
+    nocompress
+}

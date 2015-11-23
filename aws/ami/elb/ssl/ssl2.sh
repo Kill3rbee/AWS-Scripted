@@ -1,0 +1,23 @@
+#!/usr/bin/expect
+spawn openssl req -new -key server.key -out server.csr
+expect ":"
+send "somepassword7372638\n"
+expect ":"
+send "GB\n"
+expect ":"
+send "London\n"
+expect ":"
+send "London\n"
+expect ":"
+send "Your Company\n"
+expect ":"
+send "WWW\n"
+expect ":"
+send "www.yourwebsite.com\n"
+expect ":"
+send "youremail at yourcompany dot com\n"
+expect ":"
+send "\n"
+expect ":"
+send "\n"
+interact

@@ -1,0 +1,122 @@
+<style type="text/css">
+
+html {
+    margin: 0;
+    padding: 0;
+	}
+
+body {
+	FONT-SIZE : 14pt;
+	FONT-FAMILY: Calibri, sans-serif;
+	}
+
+h1 {
+	FONT-SIZE : 14pt;
+	FONT-FAMILY: Calibri, sans-serif;
+	font-weight : bold;
+	color : #000044;
+	}
+
+h2 {
+	FONT-SIZE : 16pt;
+	FONT-FAMILY: Calibri, sans-serif;
+	font-weight : bold;
+	color : #000044;
+	}
+
+h3 {
+	FONT-SIZE : 12pt;
+	FONT-FAMILY: Calibri, Verdana, sans-serif;
+	font-weight : bold;
+	color : #000044;
+	}
+
+input.menubutton {
+	font-family:Verdana,sans-serif;
+    background-color:#FFFFFF;
+    border-style:double;
+    border-color:#3366FF;
+	font-size: 10pt;
+    border-width:3px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	}
+
+applet {
+    border-style:double;
+    border-color:#3366FF;
+    border-width:3px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	}
+
+td  {
+	FONT-SIZE : 10pt;
+	FONT-FAMILY: Calibri, Verdana, sans-serif;
+	font-weight : normal;
+	color : #000044;
+	}
+	
+tr.title {
+	background-color: #ddffff;
+	}
+	
+tr.low {
+	background-color: #ffffff;
+	}
+	
+tr.high {
+	background-color: #eeffff;
+	}
+	
+td.title {
+	FONT-SIZE : 8pt;
+	FONT-FAMILY: Verdana, sans-serif;
+	font-weight : bold;
+	color : #000044;
+	}
+	
+.tinytext  {
+	FONT-SIZE : 8pt;
+	FONT-FAMILY: Verdana, sans-serif;
+	font-weight : normal;
+	color : #000000;
+	}
+
+.redtext  {
+	color : #cc0000;
+	}
+
+.greentext  {
+	color : #00cc00;
+	}
+
+.tabtexthi  {
+	FONT-SIZE : 8pt;
+	FONT-FAMILY: Arial, sans-serif;
+	font-weight : normal;
+	color : #ffffff;
+	}
+	
+.tabtextlo  {
+	FONT-SIZE : 8pt;
+	FONT-FAMILY: Arial, sans-serif;
+	font-weight : normal;
+	color : #cccccc;
+	}
+	
+.footer  {
+	FONT-SIZE : 6pt;
+	FONT-FAMILY: Verdana, sans-serif;
+	font-weight : normal;
+	color : #000000;
+	}
+	
+html {overflow-y: scroll;}
+
+iframe { 
+	overflow-x: hidden; 
+	overflow-y: scroll; 
+	}
+
+</style>

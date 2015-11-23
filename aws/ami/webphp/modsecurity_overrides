@@ -1,0 +1,4 @@
+# turn off modsecurity for some files
+SecRule REQUEST_FILENAME "^/elb.htm$"  "id:'99996',phase:1,nolog,allow,ctl:ruleEngine=Off"
+SecRule REQUEST_FILENAME "^/sns/bounce.php$"  "id:'99998',phase:1,nolog,allow,ctl:ruleEngine=Off"
+SecRule REQUEST_FILENAME "^/sns/complaint.php$"  "id:'99999',phase:1,nolog,allow,ctl:ruleEngine=Off"

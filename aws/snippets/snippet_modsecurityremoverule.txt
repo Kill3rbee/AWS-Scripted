@@ -1,0 +1,3 @@
+<LocationMatch "/elb.htm">
+SecRuleRemoveById 960017
+</LocationMatch>

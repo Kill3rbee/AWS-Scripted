@@ -1,0 +1,8 @@
+    "User": {
+        "UserName": dummy", 
+        "Path": "/", 
+        "CreateDate": "2019-10-19T03:37:48.351Z", 
+        "UserId": "somestring", 
+        "Arn": "arn:aws:iam::000000000000:user/dummy"
+    }
+}

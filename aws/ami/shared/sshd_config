@@ -1,0 +1,33 @@
+# ssh config file
+# the main change is using port 38142
+# otherwise, we turn off anything we don't need
+
+Port 38142
+
+Protocol 2
+
+SyslogFacility AUTHPRIV
+LogLevel INFO
+
+PermitRootLogin no
+PermitRootLogin forced-commands-only
+AuthorizedKeysFile	.ssh/authorized_keys
+HostbasedAuthentication no
+IgnoreRhosts yes
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+
+AllowUsers ec2-user
+
+UsePAM yes
+
+X11Forwarding yes
+PrintLastLog yes
+UsePrivilegeSeparation sandbox
+
+AcceptEnv LANG LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES
+AcceptEnv LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT
+AcceptEnv LC_IDENTIFICATION LC_ALL LANGUAGE
+AcceptEnv XMODIFIERS
+
+Subsystem	sftp	/usr/libexec/openssh/sftp-server

@@ -1,0 +1,16 @@
+input=input
+output=
+running: test.sh
+./snippet_sourcetests.sh: line 18: test.sh: command not found
+running: ./test.sh
+input=
+output=
+running: . ./test.sh
+input=input
+output=output
+running: source ./test.sh
+input=input
+output=output
+running: source test.sh
+input=input
+output=output

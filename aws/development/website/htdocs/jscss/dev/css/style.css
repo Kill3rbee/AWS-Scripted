@@ -1,0 +1,91 @@
+<style type="text/css">
+
+html {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+	width: 100%;
+	overflow-y: auto;
+	}
+
+body {
+	margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+	width: 100%;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	font-weight : normal;
+	color : #333366;
+	background-color : #ffffff;
+	}
+
+table, select, input, textarea {
+	margin: 0px 0px 0px 0px;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	font-weight : normal;
+	color : #333366;
+	}
+
+div {
+	margin: 0; padding: 0; border: 0; outline: 0;
+	}
+			
+b {
+	font-weight : bold;
+	}
+	
+h1 {
+	font-size : 16pt;
+	font-weight : bold;
+	color : #EEEEEE;
+	}
+
+h2 {
+	font-size : 24px;
+	color : #07263b;
+	text-align:center;
+	padding-bottom: 20px;
+	}
+
+h3 {
+	font-size : 13pt;
+	font-weight : bold;
+	color : #000044;
+	padding-bottom: 10px;
+	}
+
+h4 {
+	font-size : 12pt;
+	font-weight : bold;
+	color : #000044;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	}
+
+.tinytext  {
+	font-size : 8pt;
+	font-weight : normal;
+	color : #000000;
+	}
+
+.redtext  {
+	color : #cc0000;
+	}
+
+.greentext  {
+	color : #00cc00;
+	}
+
+.titletext {
+	text-align:center; font: bold 36px Arial; color: #000000; margin-top: 20px; margin-bottom: 20px;
+	}
+	
+.errmessage {
+	font: bold 15px Calibri; color: #cc0000;
+	}
+
+.okmessage {
+	font: bold 15px Calibri; color: #00cc00;
+	}
+	
+</style>

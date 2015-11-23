@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Server>
+   <Service>
+       <Connector address="*" port="8080" processors="10" />
+       <Engine name="mmonit" defaultHost="localhost" fileCache="10MB">
+           <Realm url="sqlite:///db/mmonit.db?synchronous=normal&heap_limit=8000&foreign_keys=on&journal_mode=wal"
+                  minConnections="5"
+                  maxConnections="25"
+                  reapConnections="300" />
+           <ErrorLogger directory="logs" fileName="error.log" rotate="month" />
+           <Host name="localhost" appBase=".">
+	       <Logger directory="logs" fileName="mmonit.log" rotate="month" timestamp="true" />
+               <Context path="" docBase="docroot" sessionTimeout="1800" maxActiveSessions="1024" saveSessions="true" />
+               <Context path="/collector" docBase="docroot/collector" />
+	   </Host>
+       </Engine>
+       <Connector address="SEDadminprivateipSED" port="8443" processors="10" secure="true" />
+       <Engine name="SEDadminpublicipSED" defaultHost="SEDadminpublicipSED" fileCache="10MB">
+           <Realm url="sqlite:///db/mmonit.db?synchronous=normal&heap_limit=8000&foreign_keys=on&journal_mode=wal"
+                  minConnections="5"
+                  maxConnections="25"
+                  reapConnections="300" />
+           <ErrorLogger directory="logs" fileName="error.log" rotate="month" />
+           <Host name="SEDadminpublicipSED" appBase="." address="SEDadminprivateipSED" certificate="conf/mmonit.pem">
+	       <Logger directory="logs" fileName="mmonit.log" rotate="month" timestamp="true" />
+               <Context path="" docBase="docroot" sessionTimeout="1800" maxActiveSessions="1024" saveSessions="true" />
+               <Context path="/collector" docBase="docroot/collector" />
+	   </Host>
+       </Engine>
+   </Service>
+
+<License owner="Paste your licence here, replace the whole Licence Tag, owner is required">
+</License>
+
+</Server>
